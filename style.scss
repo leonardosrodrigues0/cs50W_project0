@@ -6,8 +6,8 @@ body {
 
 // .space configuration
 
-$bigwid: 900px;
-$smallwid:600px;
+$bigwid: 300mm;
+$smallwid:150mm;
 $uppermargin: 1cm;
 $bgcolor: lightblue;
 
@@ -15,19 +15,19 @@ $bgcolor: lightblue;
     background-color: $bgcolor;
 }
 
-@media (min-width: $bigwid) {
+@media screen and (min-width: $bigwid) {
     .space {
         margin: $uppermargin 15%;
     }
 }
 
-@media (max-width: $bigwid - 1) and (min-width: $smallwid) {
+@media screen and (max-width: $bigwid) and (min-width: $smallwid) {
     .space {
         margin: $uppermargin 10%;
     }
 }
 
-@media (max-width: $smallwid - 1) {
+@media screen and (max-width: $smallwid) {
     .space {
         margin: 0;
     }

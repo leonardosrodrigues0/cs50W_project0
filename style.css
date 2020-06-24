@@ -4,13 +4,13 @@ body {
 .space {
   background-color: lightblue; }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 300mm) {
   .space {
     margin: 1cm 15%; } }
-@media (max-width: 899px) and (min-width: 600px) {
+@media screen and (max-width: 300mm) and (min-width: 150mm) {
   .space {
     margin: 1cm 10%; } }
-@media (max-width: 599px) {
+@media screen and (max-width: 150mm) {
   .space {
     margin: 0; } }
 p {
