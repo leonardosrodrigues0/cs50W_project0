@@ -1,28 +1,43 @@
 body {
   background-image: linear-gradient(to bottom, #5bb7f5, #432fb6); }
 
-h2, h3 {
+.space {
+  background-color: lightblue; }
+
+@media (min-width: 900px) {
+  .space {
+    margin: 1cm 15%; } }
+@media (max-width: 899px) and (min-width: 600px) {
+  .space {
+    margin: 1cm 10%; } }
+@media (max-width: 599px) {
+  .space {
+    margin: 0; } }
+p {
+  margin: 20pt;
+  text-align: justify; }
+
+ol {
+  margin: 20pt; }
+
+h1, h2 {
   text-align: center; }
+
+.image {
+  margin: 20pt; }
+  .image img {
+    border-radius: 15pt; }
 
 .box {
   background-color: #86b4f0;
   color: darkblue;
   margin: 20pt;
-  padding: 10pt 10pt 10pt 10pt;
+  padding: 10pt;
   border-radius: 5pt; }
 
 .card {
   margin-top: 5pt;
   margin-bottom: 15pt;
   text-align: center; }
-
-@media (min-width: 900px) {
-  .space {
-    background-color: lightblue;
-    margin: 1cm 20%; } }
-@media (max-width: 899px) {
-  .space {
-    background-color: lightblue;
-    margin: 1cm 10%; } }
 
 /*# sourceMappingURL=style.css.map */

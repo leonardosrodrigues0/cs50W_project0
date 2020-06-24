@@ -4,15 +4,63 @@ body {
     background-image: linear-gradient(to bottom, rgb(91, 183, 245), rgb(67, 47, 182));
 }
 
-h2, h3 {
+// .space configuration
+
+$bigwid: 900px;
+$smallwid:600px;
+$uppermargin: 1cm;
+$bgcolor: lightblue;
+
+.space {
+    background-color: $bgcolor;
+}
+
+@media (min-width: $bigwid) {
+    .space {
+        margin: $uppermargin 15%;
+    }
+}
+
+@media (max-width: $bigwid - 1) and (min-width: $smallwid) {
+    .space {
+        margin: $uppermargin 10%;
+    }
+}
+
+@media (max-width: $smallwid - 1) {
+    .space {
+        margin: 0;
+    }
+}
+
+//other elements
+
+p {
+    margin: 20pt;
+    text-align: justify;
+}
+
+ol {
+    margin: 20pt;
+}
+
+h1, h2 {
     text-align: center;
+}
+
+.image {
+    margin: 20pt;
+
+    img {
+        border-radius: 15pt;
+    }
 }
 
 .box {
     background-color: rgb(134, 180, 240);
     color: darkblue;
     margin: 20pt;
-    padding: 10pt 10pt 10pt 10pt;
+    padding: 10pt;
     border-radius: 5pt;
 }
 
@@ -22,20 +70,3 @@ h2, h3 {
     text-align: center;
 }
 
-$smallwid: 900px;
-$uppermargin: 1cm;
-$bgcolor: lightblue;
-
-@media (min-width: $smallwid) {
-    .space {
-        background-color: $bgcolor;
-        margin: $uppermargin 20%;
-    }
-}
-
-@media (max-width: $smallwid - 1) {
-    .space {
-        background-color: $bgcolor;
-        margin: $uppermargin 10%;
-    }
-}

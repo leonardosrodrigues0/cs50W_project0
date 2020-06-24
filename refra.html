@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Laser beams</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div class="space">
+
+            <nav class="navbar navbar-light bg-light">
+                <a href="index.html" class="btn btn-primary">Back</a>
+            </nav>
+            
+            <p></p>
+            
+            <h1>Refraction</h1>
+
+            <p>
+                Refraction occurs when a wave of any kind reaches an interface that separates two environments with diferent refractive indexes.
+            </p>
+
+            <div class="box">
+                <h2>Refractive index</h2>
+
+                <p>
+                    The refractive index \(n\) of a material is defined as the ration between the light speed in the vacuum \(c\) and the light speed in that material \(v\). Known that, you can say that the refractive index measures how difficult it is for light to propagate.
+                </p>
+
+                $$ n = \dfrac{c}{v} $$
+            </div>
+
+            <div class="image">
+                <div class="row justify-content-center">
+                    <img src="images/refra.svg">
+                </div>
+            </div>
+
+            <p>
+                There are two laws of reflection that describe the behavior of the reflected beam.
+            </p>
+
+            <ol>
+                <li>Both incident and reflected rays are on the same plane.</li>
+                <li>The angle of incidence is equal to the angle of reflection.</li>
+            </ol>
+
+            <p>
+                The transmitted beam, on the other hand, makes a different angle with the normal line. The relation between the incidence angle and the transmitted one is described by Snell's law.
+            </p>
+
+            <div class="box">
+                <h2>Snell's law</h2>
+
+                <p>
+                    When a wave goes from a environment with refractive index \(n_i\) to another one with index \(n_t\), if the angle of incidence is \(\theta_i\) and the angle of transmission is \(\theta_t\), it is true that
+                </p>
+                
+                $$ n_i \sin{\theta_i} = n_t \sin{\theta_t} $$
+            </div>
+
+            <p>
+                Note from Snell's law that, if \(n_i > n_t\), then there's a limit for the angle of incidence. As the maximum value for the sine of a number is 1, then
+
+                $$ \sin{\theta_c} = \dfrac{n_t}{n_i} $$
+
+                Where \(\theta_c\) is the maximum value possible for the angle of incidence. In this case, what happens if \(\theta > \theta_c\)?
+            </p>
+            
+        </div>
+
+    </body>
+
+</html>
