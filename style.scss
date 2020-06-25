@@ -4,15 +4,18 @@ body {
     background-image: linear-gradient(to bottom, rgb(91, 183, 245), rgb(67, 47, 182));
 }
 
-// .space configuration
+// .space configuration -----------------------
 
-$bigwid: 300mm;
-$smallwid:150mm;
-$uppermargin: 1cm;
+$bigwid: 30cm;
+$smallwid: 15cm;
+$uppermargin: 0;
 $bgcolor: lightblue;
 
 .space {
     background-color: $bgcolor;
+    font-size: 14pt;
+    font-family: Verdana;
+    padding-bottom: 20pt;
 }
 
 @media screen and (min-width: $bigwid) {
@@ -33,11 +36,43 @@ $bgcolor: lightblue;
     }
 }
 
-//other elements
+//other elements ------------------------------
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-width: 0 2pt;
+    border-style: solid;
+    border-color: blue;
+
+    th, td {
+        border-width: 2pt 0;
+        border-style: solid;
+        border-color: blue;
+        padding: 3pt;
+    }
+
+    th {
+        background-color: rgb(150, 196, 218);
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    td {
+        background-color: rgb(212, 232, 233);
+    }
+
+    #TE, #TM {
+        font-size: 14pt;
+    }
+}
 
 p {
     margin: 20pt;
     text-align: justify;
+    font-size: 14pt;
 }
 
 ol {
@@ -53,6 +88,8 @@ h1, h2 {
 
     img {
         border-radius: 15pt;
+        width: 60%;
+        background-color: white;
     }
 }
 

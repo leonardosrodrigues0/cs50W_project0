@@ -2,20 +2,46 @@ body {
   background-image: linear-gradient(to bottom, #5bb7f5, #432fb6); }
 
 .space {
-  background-color: lightblue; }
+  background-color: lightblue;
+  font-size: 14pt;
+  font-family: Verdana;
+  padding-bottom: 20pt; }
 
-@media screen and (min-width: 300mm) {
+@media screen and (min-width: 30cm) {
   .space {
-    margin: 1cm 15%; } }
-@media screen and (max-width: 300mm) and (min-width: 150mm) {
+    margin: 0 15%; } }
+@media screen and (max-width: 30cm) and (min-width: 15cm) {
   .space {
-    margin: 1cm 10%; } }
-@media screen and (max-width: 150mm) {
+    margin: 0 10%; } }
+@media screen and (max-width: 15cm) {
   .space {
     margin: 0; } }
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-width: 0 2pt;
+  border-style: solid;
+  border-color: blue; }
+  table th, table td {
+    border-width: 2pt 0;
+    border-style: solid;
+    border-color: blue;
+    padding: 3pt; }
+  table th {
+    background-color: #96c4da;
+    font-size: 14pt;
+    font-weight: bold; }
+  table td {
+    background-color: #d4e8e9; }
+  table #TE, table #TM {
+    font-size: 14pt; }
+
 p {
   margin: 20pt;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 14pt; }
 
 ol {
   margin: 20pt; }
@@ -26,7 +52,9 @@ h1, h2 {
 .image {
   margin: 20pt; }
   .image img {
-    border-radius: 15pt; }
+    border-radius: 15pt;
+    width: 60%;
+    background-color: white; }
 
 .box {
   background-color: #86b4f0;

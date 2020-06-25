@@ -27,15 +27,32 @@
             <h1>Total reflection</h1>
 
             <p>
-                Note from Snell's law that, if \(n_i > n_t\), then there's a limit for the angle of incidence. As the maximum value for the sine of a number is 1, then
+                Let's have another look at Snell's law. This time, we'll write it isolating \(\theta_t\)
             </p>
 
-            $$ \sin{\theta_c} = \dfrac{n_t}{n_i} $$
+            <div class="image">
+                <div class="row justify-content-center">
+                    <img src="images/refangles.svg">
+                </div>
+            </div>
+
+            <p> $$ \sin{\theta_t} = \dfrac{n_i}{n_t} \sin{\theta_i} $$ </p>
 
             <p>    
-                Where \(\theta_c\) is the maximum value possible for the angle of incidence. In this case, what happens if \(\theta > \theta_c\)?
+                We know that the maximum value for the sine of an angle is \(1\). However, if \(n_i > n_t\), there are values of \(\theta_i\) such that leads to \(\sin{\theta_t} > 1\). In that case, experiments show that there are no refracted beam: total reflection occurs. The largest incidence angle for which there is a refracted beam is called critical angle:
             </p>
-            
+
+            <p> $$ \sin{\theta_c} = \dfrac{n_t}{n_i} $$ </p>
+
+            <p>
+                Note that this phenomenom only occurs when light goes to an environment with a smaller refractive index. This effect is used for example in the transmission of information via optical fiber. An inner tube conduces light and, when the wave collides with the surface, it's tottaly reflected back inside because of the smaller refractive index outside, as suggested in the figure below.
+            </p>
+
+            <div class="image">
+                <div class="row justify-content-center">
+                    <img src="images/fiber.svg">
+                </div>
+            </div>
             
         </div>
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Laser beams</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div class="space">
+
+            <nav class="navbar navbar-light bg-light">
+                <a href="index.html" class="btn btn-primary">Back</a>
+            </nav>
+            
+            <p></p>
+            
+            <h1>Polarization</h1>
+
+            <p>
+                Light is composed by transverse waves. Thats means its oscillation direction is perpendicular to its propagation. That makes possible for light to be polarized. An easy way to understand polarization is to imagine different light waves going through a tiny slit. Once the waves are oscillating in different directions, only the ones aligned with the slit will pass. After that, the light is polarized: there's oscillation in only one direction. Because of the way lasers are created, they are always polarized.
+            </p>
+
+            <div class="image">
+                <div class="row justify-content-center">
+                    <img src="images/polarization.svg">
+                </div>
+            </div>
+
+            <p>
+                However, there's a reason to call eltromagnetic waves this way. And, as we know, light is an eletromagnetic wave. As the figure below shows, as light propagates, both its electric and magnetic fields oscillate in perpendicular directions. When dealing with refraction and reflection interactions, it's necessary to separate the cases where the electric field is parallel to the incidence plane - <b>transverse electric (TE)</b> or <b>p</b> polarization - and where the electric field is transverse to the plane - <b>transverse magnetic (TM)</b> or <b>s</b> polarization.
+            </p>
+
+            <table>
+                <tr>
+                    <th>Polarization</th>
+                    <th>Electric field \(\boldsymbol{E}\)</th>
+                    <th>Magnetic field \(\boldsymbol{B}\)</th>
+                </tr>
+                <tr>
+                    <td id="TE">TE</td>
+                    <td>Transverse to the plane of incidence</td>
+                    <td>Parallel to the plane of incidence</td>
+                </tr>
+                <tr>
+                    <td id="TM">TM</td>
+                    <td>Parallel to the plane of incidence</td>
+                    <td>Transverse to the plane of incidence</td>
+                </tr>
+            </table>  
+
+            <div class="image">
+                <div class="row justify-content-center">
+                    <img src="images/wave.gif">
+                </div>
+            </div>
+
+            <div class="image pb-5">
+                <div class="row justify-content-center">
+                    <img src="images/plane.svg">
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>
