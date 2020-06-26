@@ -1,14 +1,17 @@
 $enable-gradients:true;
 
 body {
-    background-image: linear-gradient(to bottom, rgb(91, 183, 245), rgb(67, 47, 182));
-    background-repeat: no-repeat;
+    background: url('images/back.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 // .space configuration -----------------------
 
-$bigwid: 30cm;
-$smallwid: 20cm;
+$bigwid: 1000px;
+$smallwid: 700px;
 $uppermargin: 0;
 $bgcolor: lightblue;
 
@@ -19,19 +22,19 @@ $bgcolor: lightblue;
     padding-bottom: 20pt;
 }
 
-@media screen and (min-width: $bigwid) {
+@media only screen and (min-width: $bigwid) {
     .space {
         margin: $uppermargin 15%;
     }
 }
 
-@media screen and (max-width: $bigwid) and (min-width: $smallwid) {
+@media only screen and (max-width: $bigwid) and (min-width: $smallwid) {
     .space {
         margin: $uppermargin 10%;
     }
 }
 
-@media screen and (max-width: $smallwid) {
+@media only screen and (max-width: $smallwid) {
     .space {
         margin: 0;
     }

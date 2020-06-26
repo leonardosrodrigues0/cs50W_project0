@@ -1,6 +1,9 @@
 body {
-  background-image: linear-gradient(to bottom, #5bb7f5, #432fb6);
-  background-repeat: no-repeat; }
+  background: url("images/back.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .space {
   background-color: lightblue;
@@ -8,13 +11,13 @@ body {
   font-family: Verdana;
   padding-bottom: 20pt; }
 
-@media screen and (min-width: 30cm) {
+@media only screen and (min-width: 1000px) {
   .space {
     margin: 0 15%; } }
-@media screen and (max-width: 30cm) and (min-width: 20cm) {
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
   .space {
     margin: 0 10%; } }
-@media screen and (max-width: 20cm) {
+@media only screen and (max-width: 700px) {
   .space {
     margin: 0; } }
 table {
