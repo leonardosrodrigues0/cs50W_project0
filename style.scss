@@ -1,7 +1,7 @@
 $enable-gradients:true;
 
 body {
-    background: url('images/back.jpg') no-repeat center center fixed; 
+    background: url('images/back.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,7 +15,7 @@ $smallwid: 700px;
 $uppermargin: 0;
 $bgcolor: lightblue;
 
-%basicspace {
+.space {
     background-color: $bgcolor;
     font-size: 14pt;
     font-family: Verdana;
@@ -24,26 +24,27 @@ $bgcolor: lightblue;
 
 @media only screen and (min-width: $bigwid) {
     .space {
-        @extend %basicspace;
         margin: $uppermargin 15%;
     }
 }
 
 @media only screen and (max-width: $bigwid) and (min-width: $smallwid) {
     .space {
-        @extend %basicspace;
         margin: $uppermargin 10%;
     }
 }
 
 @media only screen and (max-width: $smallwid) {
     .space {
-        @extend %basicspace;
         margin: 0;
     }
 }
 
 //other elements ------------------------------
+
+%innermargin {
+    margin: 20pt;
+}
 
 table {
     border-collapse: collapse;
@@ -77,13 +78,13 @@ table {
 }
 
 p {
-    margin: 20pt;
+    @extend %innermargin;
     text-align: justify;
     font-size: 14pt;
 }
 
 ol {
-    margin: 20pt;
+    @extend %innermargin;
 }
 
 h1, h2 {
@@ -91,7 +92,7 @@ h1, h2 {
 }
 
 .image {
-    margin: 20pt;
+    @extend %innermargin;
 
     img {
         border-radius: 15pt;
@@ -101,9 +102,9 @@ h1, h2 {
 }
 
 .box {
+    @extend %innermargin;
     background-color: rgb(134, 180, 240);
     color: darkblue;
-    margin: 20pt;
     padding: 10pt;
     border-radius: 5pt;
 }
