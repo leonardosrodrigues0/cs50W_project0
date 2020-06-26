@@ -1,5 +1,6 @@
 body {
-  background-image: linear-gradient(to bottom, #5bb7f5, #432fb6); }
+  background-image: linear-gradient(to bottom, #5bb7f5, #432fb6);
+  background-repeat: no-repeat; }
 
 .space {
   background-color: lightblue;
@@ -10,10 +11,10 @@ body {
 @media screen and (min-width: 30cm) {
   .space {
     margin: 0 15%; } }
-@media screen and (max-width: 30cm) and (min-width: 15cm) {
+@media screen and (max-width: 30cm) and (min-width: 20cm) {
   .space {
     margin: 0 10%; } }
-@media screen and (max-width: 15cm) {
+@media screen and (max-width: 20cm) {
   .space {
     margin: 0; } }
 table {
