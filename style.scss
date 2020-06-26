@@ -15,7 +15,7 @@ $smallwid: 700px;
 $uppermargin: 0;
 $bgcolor: lightblue;
 
-.space {
+%basicspace {
     background-color: $bgcolor;
     font-size: 14pt;
     font-family: Verdana;
@@ -24,18 +24,21 @@ $bgcolor: lightblue;
 
 @media only screen and (min-width: $bigwid) {
     .space {
+        @extend %basicspace;
         margin: $uppermargin 15%;
     }
 }
 
 @media only screen and (max-width: $bigwid) and (min-width: $smallwid) {
     .space {
+        @extend %basicspace;
         margin: $uppermargin 10%;
     }
 }
 
 @media only screen and (max-width: $smallwid) {
     .space {
+        @extend %basicspace;
         margin: 0;
     }
 }

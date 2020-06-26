@@ -1,75 +1,53 @@
-body {
-  background: url("images/back.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+/*
+Sass::SyntaxError: You may not @extend an outer selector from within @media.
+You may only @extend selectors within the same directive.
+From "@extend %basicspace" on line 27 of style.scss.
 
-.space {
-  background-color: lightblue;
-  font-size: 14pt;
-  font-family: Verdana;
-  padding-bottom: 20pt; }
 
-@media only screen and (min-width: 1000px) {
-  .space {
-    margin: 0 15%; } }
-@media only screen and (max-width: 1000px) and (min-width: 700px) {
-  .space {
-    margin: 0 10%; } }
-@media only screen and (max-width: 700px) {
-  .space {
-    margin: 0; } }
-table {
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border-width: 0 2pt;
-  border-style: solid;
-  border-color: blue; }
-  table th, table td {
-    border-width: 2pt 0;
-    border-style: solid;
-    border-color: blue;
-    padding: 3pt; }
-  table th {
-    background-color: #96c4da;
-    font-size: 14pt;
-    font-weight: bold; }
-  table td {
-    background-color: #d4e8e9; }
-  table #TE, table #TM {
-    font-size: 14pt; }
-
-p {
-  margin: 20pt;
-  text-align: justify;
-  font-size: 14pt; }
-
-ol {
-  margin: 20pt; }
-
-h1, h2 {
-  text-align: center; }
-
-.image {
-  margin: 20pt; }
-  .image img {
-    border-radius: 15pt;
-    width: 60%;
-    background-color: white; }
-
-.box {
-  background-color: #86b4f0;
-  color: darkblue;
-  margin: 20pt;
-  padding: 10pt;
-  border-radius: 5pt; }
-
-.card {
-  margin-top: 5pt;
-  margin-bottom: 15pt;
-  text-align: center; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:18
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:327:in `check_directives_match!'
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:198:in `block (2 levels) in do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:198:in `each'
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:198:in `block in do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:188:in `map!'
+/usr/lib/ruby/vendor_ruby/sass/selector/simple_sequence.rb:188:in `do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/sequence.rb:112:in `block in do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/sequence.rb:110:in `map'
+/usr/lib/ruby/vendor_ruby/sass/selector/sequence.rb:110:in `do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/comma_sequence.rb:71:in `block in do_extend'
+/usr/lib/ruby/vendor_ruby/sass/selector/comma_sequence.rb:70:in `map'
+/usr/lib/ruby/vendor_ruby/sass/selector/comma_sequence.rb:70:in `do_extend'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:44:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:28:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:37:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:38:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:28:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/extend.rb:15:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:39:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: You may not @extend an outer selector from within @media.\A You may only @extend selectors within the same directive.\A From \"@extend %basicspace\" on line 27 of style.scss.\A "; }
